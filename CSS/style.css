@@ -1,0 +1,207 @@
+@font-face {
+    font-family:Montserrat;
+    src: url(../webFonts/Montserrat-VariableFont_wght.ttf);
+}
+:root{
+    --links:#F22E3E;
+    --text:#111111;
+    --secondary:#777777;
+    --button:#FBB200;
+
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Montserrat;
+}
+img{
+    width:100%;
+}
+.nav , .home{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 10%;
+    padding-bottom: 20px;
+}
+.nav{
+     padding-top: 20px;
+     box-shadow: 1px 5px 18px rgb(0,0,0,0.1);
+    position: sticky;
+}
+.nav .logo{
+    width: 5%;
+}
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links ul{
+    display: flex;
+    gap: 50px;
+}
+.links li{
+    list-style: none;
+}
+.links li .active{
+    color:var(--links);
+}
+.links li a{
+    text-decoration: none;
+    color:black;
+    font-weight:600;
+    font-size: larger;
+}
+.links li a:hover{
+    color:var(--links);
+}
+.home{
+    padding-top: 6%;
+}
+.home .caption{
+    width:40%;
+    padding-top:50px;
+}
+.home .caption h1{
+    font-size: 64px;
+    color:var(--text)
+}
+.highlightd{
+    color: var(--links);
+}
+.home .caption p{
+    font-size: 24px;
+    color:var(--secondary);
+    padding-top: 10px;
+}
+.caption button , .dish-caption button{
+    font-family: Montserrat;
+    padding:15px 32px;
+    background-color: var(--button);
+    color:white;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    border:none;
+    border-radius: 50px;
+    text-transform: uppercase;
+    margin-top: 5%;
+    cursor: pointer;
+}
+.caption button:hover ,.dish-caption button:hover {
+    background-color: var(--links);
+}
+.home-img{
+    width:40%;
+}
+.onion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.onion-img{
+    width:7%;
+}
+.description{
+    display: flex;
+    vertical-align: middle;
+    gap:5%;
+    padding-bottom: 20px;
+}
+.des-img{
+    width:28%;
+}
+.des-caption {
+    width:23%;
+    display: flex;
+    flex-direction: column;
+     justify-content: center;
+    align-items: center;
+}
+.des-caption h3{
+    line-height: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.des-caption p{
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    padding-top: 10px;
+    color:var(--secondary);
+    text-align:start;
+}
+.garlic{
+    width:10%;
+    align-self: center;
+    padding-top: 5%;
+    margin-left: 5%;
+}
+.dishes{
+    padding: 60px 80px;
+}
+#popular{
+    color:var(--links);
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+}
+#popular::after{
+    content: "";
+    width:90px;
+    height: 2px;
+    position: absolute;
+    background-color: var(--links);
+    bottom: 45%;
+    left:14%;
+}
+.menu{
+    display: flex;
+    justify-content: space-between;
+}
+.dishes h2{
+    color:var(--text);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 55px;
+    padding-top: 10px;
+    margin-bottom: 60px;
+}
+.dish{
+    border:1px solid rgb(0,0,0,0.1);
+    width:32%;
+    border-radius: 30px;
+    padding: 30px 30px;
+}
+.dish-img{
+  width: 90%;
+  margin: auto;
+}
+.dish-title{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5px;
+    padding-bottom: 15px;
+}
+.dish-title h5{
+    font-size: 22px;
+    color:var(--text);
+}
+.dish-title p {
+    font-size: 22px;
+    color:var(--links);
+    font-weight: 600;
+    padding-top: 10px;
+}
+.dish-caption{
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--secondary);
+    padding-bottom: 15px;
+}
+.dish-caption button {
+    padding:10px 25px;
+    font-size: 18px;
+    font-weight: 500;
+}
